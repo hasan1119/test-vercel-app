@@ -4,7 +4,7 @@ const { MongoClient } = require("mongodb");
 const cors = require("cors");
 const {v4:uuid} = require("uuid");
 require("dotenv").config();
-const stripe = require("stripe")(process.env.STRIPE_KEY);
+const stripe = require("stripe")("sk_test_51KD7J8JE5np8TvxNiHIUayuWdJYZRfu8VUr4H4HiN2fdAA94zWD4FdxkErKs535D84fpcY3kO0zWrJ4a2LGvSfs800bolyozu4");
 
 const app = express()
 const ObjectId = require("mongodb").ObjectId;
@@ -67,7 +67,7 @@ app.get("/", async (req, res) => {
 
 
   // CONNECTION URI
-const uri = process.env.DB_URI;
+const uri = 'mongodb+srv://e_eommarce:Pp1n56HAf9GzOXbU@cluster0.dv4ff.mongodb.net/etechhouse?retryWrites=true&w=majority';
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
