@@ -67,7 +67,7 @@ app.get("/", async (req, res) => {
 
 
   // CONNECTION URI
-const uri = 'mongodb+srv://e_eommarce:Pp1n56HAf9GzOXbU@cluster0.dv4ff.mongodb.net/etechhouse?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://e_eommarce:Pp1n56HAf9GzOXbU@cluster0.dv4ff.mongodb.net';
 const client = new MongoClient(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
